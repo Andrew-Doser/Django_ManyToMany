@@ -12,4 +12,5 @@ app_name='Posts' #Needed to run tests
 #This is your endpoint API
 urlpatterns = [
     path('', include(router.urls)),
+    path('search/', views.retrieve, name='postsearch')
 ]
